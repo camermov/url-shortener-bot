@@ -1,0 +1,31 @@
+{
+  "name": "url-shortener-bot",
+  "version": "1.0.0",
+  "description": "This Telegram bot will help you to shorten url",
+  "type": "module",
+  "main": "index.js",
+  "author": {
+    "email": "yusufjabriko@gmail.com",
+    "name": "Moch Yusuf"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "deploy": "git push heroku main"
+  },
+  "keywords": [
+    "heroku",
+    "telegram",
+    "bot",
+    "url-shortener",
+    "nodejs"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "dotenv": "^16.0.1",
+    "telegraf": "^4.8.5"
+  },
+  "engines": {
+    "node": ">=14.16"
+  }
+}
