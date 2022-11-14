@@ -12,7 +12,7 @@ export const getShortUrl = async (url) => {
         const resTinyUrl = await axios.get(`https://tinyurl.com/api-create.php?url=${url}`);
         const resCleanUrI = await axios.post(`https://cleanuri.com/api/v1/shorten`, { url });
         const resBitly = await axios.post('https://api-ssl.bitly.com/v4/shorten', { long_url: url }, {
-            headers: { Authorization: "Bearer 142c70a4f94942cdd1a2edad11ceb26c99499177" }
+            headers: { Authorization: "Bearer 7b16205bd776f0b9ff7697fa71e506b62605e3d2" }
         });
         return { bitly: resBitly.data.link, tinyUrl: resTinyUrl.data, cleanUrl: resCleanUrI.data.result_url };
     } catch (error) {
