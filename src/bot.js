@@ -8,7 +8,7 @@ bot.start(async (ctx) => {
     ctx.replyWithChatAction('typing');
     const { id } = ctx.chat;
     const { first_name } = ctx.chat;
-    bot.telegram.sendMessage(id, ` Welcome ${first_name}👋👋, Have a Great Day.\nSend me the <b>🔗Link</b> and I'll shorten it for you.`, {
+    bot.telegram.sendMessage(id, ` Welcome ${first_name} 👋, Have a Great Day.\nSend me the <b>🔗Link</b> and I'll shorten it for you.`, {
         parse_mode: 'HTML'
     });
 });
