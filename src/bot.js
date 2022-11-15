@@ -18,7 +18,7 @@ bot.on('text', async (ctx) => {
     const { id } = ctx.chat;
     const { text } = ctx.message;
     const shortedUrl = await getShortUrl(text);
-    bot.telegram.sendMessage(id, shortedUrl ? `Here's your short url ⬇️ ⬇️\n\n<b>Short link with Bitly:</b>\n🌐 ${shortedUrl.bitly}\n<b>Short link with TinyURL:</b>\n🌐 ${shortedUrl.tinyUrl}\n<b>Short link with Clean Url:</b>\n🌐 ${shortedUrl.cleanUrl}` : '<b>Please send valid url</b>\n\nfor example <i>https://www.google.com</i>', {
+    bot.telegram.sendMessage(id, shortedUrl ? `Here's your short url ⬇️ ⬇️\n\n<b>Short link with Bitly:</b>\n🌐 ${shortedUrl.bitly}\n<b>Short link with TinyURL:</b>\n🌐 ${shortedUrl.tinyUrl}\n<b>Short link with Isgd:</b>\n🌐 ${shortedUrl.Isgd}\n<b>Short link with Clean Url:</b>\n🌐 ${shortedUrl.cleanUrl}` : '<b>Please send valid url</b>\n\nfor example <i>https://www.google.com</i>', {
         parse_mode: 'HTML'
     });
 });
